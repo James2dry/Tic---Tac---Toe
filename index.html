@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://th.bing.com/th/id/OIG3.7UufcyOQNPLFpgdlqvwU?w=1024&h=1024&rs=1&pid=ImgDetMain" type="image/x-icon">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <h1>Tic Tac Toe</h1>
+        <button id="twoPlayerBtn">Two-Player Mode</button>
+        <button id="aiModeBtn">Player vs AI</button>
+        <div id="difficulty" class="hidden">
+            <h2>Select AI Difficulty</h2>
+            <button data-difficulty="easy">Easy</button>
+            <button data-difficulty="normal">Normal</button>
+            <button data-difficulty="hard">Hard</button>
+        </div>
+    </div>
+
+    <div class="game-container hidden" id="gameContainer">
+        <h1 id="gameTitle"></h1>
+        <div class="scoreboard">
+            <div>Player X: <span id="scoreX">0</span></div>
+            <div>Player O: <span id="scoreO">0</span></div>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="message hidden" id="message">
+            <p id="status"></p>
+            <button id="restart">Play Again</button>
+            <button id="mainMenu">Main Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
